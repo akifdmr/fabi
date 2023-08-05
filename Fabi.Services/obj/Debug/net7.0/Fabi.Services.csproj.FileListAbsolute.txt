@@ -1,0 +1,17 @@
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.Services.deps.json
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.Services.dll
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.Services.pdb
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.Core.dll
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.EF.dll
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.EF.pdb
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/bin/Debug/net7.0/Fabi.Core.pdb
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.csproj.AssemblyReference.cache
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.AssemblyInfoInputs.cache
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.AssemblyInfo.cs
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.csproj.CoreCompileInputs.cache
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.csproj.CopyComplete
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.dll
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/refint/Fabi.Services.dll
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/Fabi.Services.pdb
+/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Services/obj/Debug/net7.0/ref/Fabi.Services.dll

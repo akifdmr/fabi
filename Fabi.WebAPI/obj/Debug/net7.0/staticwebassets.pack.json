@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/wwwroot/Images/MoviesPoster/1.jpg",
+      "PackagePath": "staticwebassets/Images/MoviesPoster/1.jpg"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Fabi.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Fabi.WebAPI.props",
+      "PackagePath": "build\\Fabi.WebAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Fabi.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\Fabi.WebAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Fabi.WebAPI.props",
+      "PackagePath": "buildTransitive\\Fabi.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "bQyjFmo60AUILImlczKlePMCSPmn9RYrEcYI910p0tU=",
+  "Source": "Fabi.WebAPI",
+  "BasePath": "_content/Fabi.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Fabi.WebAPI/wwwroot",
+      "Source": "Fabi.WebAPI",
+      "ContentRoot": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/wwwroot/",
+      "BasePath": "_content/Fabi.WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/wwwroot/Images/MoviesPoster/1.jpg",
+      "SourceId": "Fabi.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/wwwroot/",
+      "BasePath": "_content/Fabi.WebAPI",
+      "RelativePath": "Images/MoviesPoster/1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/MoviesPoster/1.jpg"
+    }
+  ]
+}
