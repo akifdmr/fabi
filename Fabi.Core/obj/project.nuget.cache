@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MITEXNJz5KGpwkIh2Zwi/f0uEUxsshrWEH9VDKoGbaNTHEdMh9LERHxpFalqjBPB/rzemK5vSc6qcJQbn7qXgQ==",
+  "dgSpecHash": "bp5GGvroeV2HnTUL1+0h8rjTUPzMVjfYZzNG4vmVg4H8G/5juvq7SbeAhjcjQU0G2PrrvbyF2rCGFvDClUzQ7Q==",
   "success": true,
-  "projectFilePath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj",
+  "projectFilePath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
   "expectedPackageFiles": [
     "/Users/akifdemir/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.9/microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",

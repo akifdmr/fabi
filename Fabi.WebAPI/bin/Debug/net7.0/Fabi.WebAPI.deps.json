@@ -1275,18 +1275,6 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.SqlServer/7.0.9": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.0.2",
@@ -1296,19 +1284,6 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "assemblyVersion": "7.0.9.0",
             "fileVersion": "7.0.923.31909"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
-          "NETStandard.Library": "1.6.1"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {
-            "assemblyVersion": "1.1.6.0",
-            "fileVersion": "1.1.6.40621"
           }
         }
       },
@@ -2675,7 +2650,6 @@
           "AutoMapper": "12.0.1",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore": "7.0.9",
           "System.IdentityModel.Tokens.Jwt": "6.32.1"
         },
         "runtime": {
@@ -2685,9 +2659,9 @@
       "Fabi.EF/1.0.0": {
         "dependencies": {
           "Fabi.Core": "1.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9"
         },
         "runtime": {
           "Fabi.EF.dll": {}
@@ -3298,26 +3272,12 @@
       "path": "microsoft.entityframeworkcore.relational/7.0.9",
       "hashPath": "microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kz7C0Ddnge16NRf4CU8GygYxOor3+oQ797//eXI+xbKlJr2ighAEkno9gOipDlym4SiFtKNNuOuBI/BDBGD7Kg==",
-      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore.SqlServer/7.0.9": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-19S5BWZBcaShhLWzePi9iOq+meKIgL+dDlS0NQgPOQapu3wb3So3ZL0xgPmmlyq3GLYvXiCmQsK3Yv3vXYaMTg==",
       "path": "microsoft.entityframeworkcore.sqlserver/7.0.9",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-nxdW1YfZtn3nbcFqIAbjo6vCbCNOx0g82qMv+9fTUsNTsW0KSENYc2pbjF3yO8ZqYdBjmx2gMfAGk6wjy5cldg==",
-      "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.6",
-      "hashPath": "microsoft.entityframeworkcore.sqlserver.design.1.1.6.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Tools/7.0.9": {
       "type": "package",

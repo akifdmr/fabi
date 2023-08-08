@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj": {}
+    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {}
   },
   "projects": {
-    "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj": {
+    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj",
+        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
         "projectName": "Fabi.Core",
-        "projectPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj",
+        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
         "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/obj/",
+        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akifdemir/.nuget/NuGet/NuGet.Config"

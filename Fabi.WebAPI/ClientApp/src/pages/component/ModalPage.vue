@@ -436,7 +436,7 @@
                         <div class="text-sm mb-5">
                           <div class="space-y-2">
                             <p>You might not be aware of this fact, but every frame, digital video, canvas, responsive design, and image often has a rectangular shape that is exceptionally precise in proportion (or ratio).</p>
-                            <p>The ratio has to be well-defined to make shapes fit into different and distinct mediums, such as computer, movies, television and camera screens.</p>
+                            <p>The ratio has to be well-defined to make shapes fit into different and distinct mediums, such as computer, Fabi, television and camera screens.</p>
                           </div>
                         </div>
                         <!-- Modal footer -->

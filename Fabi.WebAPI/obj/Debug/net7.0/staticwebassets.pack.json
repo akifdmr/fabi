@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/wwwroot/Images/MoviesPoster/1.jpg",
-      "PackagePath": "staticwebassets/Images/MoviesPoster/1.jpg"
+      "Id": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI/wwwroot/Images/FabiPoster/1.jpg",
+      "PackagePath": "staticwebassets/Images/FabiPoster/1.jpg"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Fabi.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

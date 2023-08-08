@@ -5,8 +5,8 @@ namespace Fabi.Core.Interfaces;
 public interface IUnitOfWork
 {
     //Register App Repositories
-    IBaseRepository<Genre> Genre { get; }
-    IBaseRepository<Movie> Movie { get; }
+   IBaseRepository<Genre> Genre { get; }
+   IBaseRepository<Movie> Movie { get; }
     IAuthRepository Auth { get;  }
 
     //Global Methods

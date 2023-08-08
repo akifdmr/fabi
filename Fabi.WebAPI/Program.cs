@@ -9,14 +9,12 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-builder.Services.AddControllersWithViews();
-
 // Add services to the container.
-        // builder.Services.AddDbContext<AppDbContext>(options =>
-        // {
-        //     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-        // });
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")
+    ));
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -28,7 +26,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFileHandler, FileHandler>();
 
 //Seed Database
-//builder.Services.AddScoped<IDbInitializer, DbInitializer>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -120,10 +118,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
+
 //seed database 
-//SeedDatabase();
+SeedDatabase();
 
 //add core before authorization
 app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
@@ -131,11 +128,8 @@ app.UseCors(c => c.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller}/{action=Index}/{id?}");
+app.MapControllers();
 
-app.MapFallbackToFile("index.html");
 app.Run();
 
 //----------------Helper Method-----------------------------
