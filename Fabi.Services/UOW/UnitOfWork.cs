@@ -3,9 +3,7 @@ using Fabi.Core.Entities.Models;
 using Fabi.Core.Interfaces;
 using Fabi.EF;
 using Fabi.EF.Repositories;
-using Fabi.Core.appsettings;
 using AutoMapper;
-using Microsoft.Extensions.Options;
 
 namespace Fabi.Services.UOW;
 

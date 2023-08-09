@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.EF/Fabi.EF.csproj": {}
+    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj": {}
   },
   "projects": {
-    "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj": {
+    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj",
+        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
         "projectName": "Fabi.Core",
-        "projectPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj",
+        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
         "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/obj/",
+        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.EF/Fabi.EF.csproj": {
+    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.EF/Fabi.EF.csproj",
+        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj",
         "projectName": "Fabi.EF",
-        "projectPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.EF/Fabi.EF.csproj",
+        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj",
         "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.EF/obj/",
+        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
@@ -97,8 +97,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj": {
-                "projectPath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.Core/Fabi.Core.csproj"
+              "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
+                "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj"
               }
             }
           }
@@ -113,17 +113,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.1.1, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
             },

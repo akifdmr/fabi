@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vlKYhGK6EDrzsaWzn6icBhqlIPacZUXY1B8ONM0odJl3QfVpiOgH2Ut1Tjqvl4idlezbBkfwHCUJM+FwMZ2pkQ==",
+  "dgSpecHash": "2pWwmfSnW8AkpshIDPDk004uORwk3HNAi2VZ94MULoWbWEwwowbWjLpM8HxmmVn8c2aRJuFGAFiukt6cjjZZeg==",
   "success": true,
-  "projectFilePath": "/Users/akifdemir/Desktop/projects/Fabi-API/Fabi.WebAPI/Fabi.WebAPI.csproj",
+  "projectFilePath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI/Fabi.WebAPI.csproj",
   "expectedPackageFiles": [
     "/Users/akifdemir/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
@@ -88,9 +88,7 @@
     "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.design/7.0.9/microsoft.entityframeworkcore.design.7.0.9.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.9/microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
-    "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.relational.design/1.1.6/microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.9/microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512",
-    "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.sqlserver.design/1.1.6/microsoft.entityframeworkcore.sqlserver.design.1.1.6.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.9/microsoft.entityframeworkcore.tools.7.0.9.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/akifdemir/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
