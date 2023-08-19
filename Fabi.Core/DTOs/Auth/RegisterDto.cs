@@ -1,4 +1,6 @@
-﻿namespace Fabi.Core.DTOs;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Fabi.Core.DTOs;
 public class RegisterDto
 {
     [StringLength(50)]

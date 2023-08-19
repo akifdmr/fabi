@@ -10,3 +10,17 @@
 /Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/Debug/net7.0/refint/Fabi.Core.dll
 /Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/Debug/net7.0/Fabi.Core.pdb
 /Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/Debug/net7.0/ref/Fabi.Core.dll
+D:\projects\fabi\Fabi.Core\bin\Debug\net7.0\Fabi.Core.deps.json
+D:\projects\fabi\Fabi.Core\bin\Debug\net7.0\Fabi.Core.dll
+D:\projects\fabi\Fabi.Core\bin\Debug\net7.0\Fabi.Core.pdb
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.csproj.AssemblyReference.cache
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.AssemblyInfoInputs.cache
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.AssemblyInfo.cs
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.csproj.CoreCompileInputs.cache
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.dll
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\refint\Fabi.Core.dll
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.pdb
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\ref\Fabi.Core.dll
+D:\projects\fabi\Fabi.Core\bin\Debug\net7.0\Fabi.Core.runtimeconfig.json
+D:\projects\fabi\Fabi.Core\obj\Debug\net7.0\Fabi.Core.genruntimeconfig.cache

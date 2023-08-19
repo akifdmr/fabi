@@ -4,11 +4,11 @@ using Microsoft.IdentityModel.Tokens;
 using Fabi.Core.appsettings;
 using Fabi.Core.Constants;
 using Fabi.Core.Entities.Models;
-using Fabi.Core.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Security.Cryptography;
+using Fabi.Core.Interfaces;
 
 namespace Fabi.Services.Helpers;
 public class TokenHandler : ITokenHandler
@@ -37,7 +37,7 @@ public class TokenHandler : ITokenHandler
             new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Email, user.Email),
-            new Claim(SD.UserId, user.Id)
+            new Claim(SD.UserId, user.Id.ToString())
     }
         .Union(userClaims)
         .Union(roleClaims);

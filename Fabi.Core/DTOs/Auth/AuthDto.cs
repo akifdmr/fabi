@@ -1,11 +1,12 @@
-﻿using System.Text.Json.Serialization;
+﻿using Fabi.Core.Constants.Enums;
+using System.Text.Json.Serialization;
 
 namespace Fabi.Core.DTOs;
 public class AuthDto
 {
     public string UserName { get; set; }
     public string Email { get; set; }
-    public List<string> Roles { get; set; }
+    public List<Role> Roles { get; set; }
     public string Token { get; set; }
     public DateTime ExpiresOn { get; set; }
     public DateTime RefreshTokenExpiration { get; set; }

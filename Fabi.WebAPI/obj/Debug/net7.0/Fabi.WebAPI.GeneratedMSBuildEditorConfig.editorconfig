@@ -9,17 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Fabi.WebAPI
 build_property.RootNamespace = Fabi.WebAPI
-build_property.ProjectDir = /Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI/
+build_property.ProjectDir = D:\projects\fabi\Fabi.WebAPI\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI
+build_property.MSBuildProjectDirectory = D:\projects\fabi\Fabi.WebAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[D:/projects/fabi/Fabi.WebAPI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[D:/projects/fabi/Fabi.WebAPI/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

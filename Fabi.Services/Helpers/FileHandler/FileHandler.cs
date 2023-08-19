@@ -1,5 +1,6 @@
 ﻿global using Microsoft.AspNetCore.Http;
 using Fabi.Core.Interfaces;
+using Fabi.Services.Interfaces;
 
 namespace Fabi.Services.Helpers.FilesHnadler
 {

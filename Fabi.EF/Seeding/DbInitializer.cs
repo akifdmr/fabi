@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Fabi.Core.Constants;
+﻿using Fabi.Core.Constants;
+using Fabi.Core.Entities.Models;
 using Fabi.Core.Interfaces;
+using Fabi.EF.Data;
+using Microsoft.AspNetCore.Identity;
 
-namespace Fabi.EF.Seeding;
+namespace Movies.EF.Seeding;
 public class DbInitializer : IDbInitializer
 {
     private ApplicationDbContext _db;
@@ -42,7 +44,7 @@ public class DbInitializer : IDbInitializer
             _seedRoles();
 
             //if roles are not created, then we will create admin user as well
-           _createAdmin();
+            _createAdmin();
         }
 
         return;
@@ -62,8 +64,7 @@ public class DbInitializer : IDbInitializer
             //temprory magic data
             UserName = "admin",
             Email = "Admin@test.com",
-            FirstName = "APP",
-            LastName = "Manager",
+    
         }, "Admin123*").GetAwaiter().GetResult();
 
         ApplicationUser user = _db.Users.FirstOrDefault(u => u.Email == "Admin@test.com");

@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Services/Fabi.Services.csproj": {}
+    "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj": {}
   },
   "projects": {
-    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
+    "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
+        "projectUniqueName": "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj",
         "projectName": "Fabi.Core",
-        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj",
-        "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/obj/",
+        "projectPath": "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj",
+        "packagesPath": "C:\\Users\\akifd\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\fabi\\Fabi.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\akifd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,15 +46,21 @@
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
             },
-            "System.IdentityModel.Tokens.Jwt": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.32.1, )"
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
@@ -71,34 +79,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj": {
+    "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj",
+        "projectUniqueName": "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj",
         "projectName": "Fabi.EF",
-        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj",
-        "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/obj/",
+        "projectPath": "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj",
+        "packagesPath": "C:\\Users\\akifd\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\fabi\\Fabi.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\akifd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
-                "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Core/Fabi.Core.csproj"
+              "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj": {
+                "projectPath": "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj"
               }
             }
           }
@@ -148,34 +158,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Services/Fabi.Services.csproj": {
+    "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Services/Fabi.Services.csproj",
+        "projectUniqueName": "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj",
         "projectName": "Fabi.Services",
-        "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Services/Fabi.Services.csproj",
-        "packagesPath": "/Users/akifdemir/.nuget/packages/",
-        "outputPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.Services/obj/",
+        "projectPath": "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj",
+        "packagesPath": "C:\\Users\\akifd\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\fabi\\Fabi.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\akifd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj": {
-                "projectPath": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.EF/Fabi.EF.csproj"
+              "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj": {
+                "projectPath": "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj"
+              },
+              "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj": {
+                "projectPath": "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj"
               }
             }
           }
@@ -192,7 +207,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.0.0-preview.4.21253.5, )"
             }
           },
           "imports": [
@@ -211,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

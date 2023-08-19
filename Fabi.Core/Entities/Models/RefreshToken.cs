@@ -3,8 +3,10 @@
 namespace Fabi.Core.Entities.Models;
 
 [Owned]
-public class RefreshToken
+public partial class RefreshToken
 {
+    public Guid Id { get; set; }
+    public Guid ApplicationUserId { get; set; }
     #region Props
     public string Token { get; set; }
     public DateTime CreatedOn { get; set; } = DateTime.UtcNow;

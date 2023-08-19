@@ -16,8 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Fabi.Core\Fabi.Core.csproj" />
-  </ItemGroup>
+   <ItemGroup>
+     <ProjectReference Include="..\Fabi.Core\Fabi.Core.csproj" />
+   </ItemGroup>
 
 </Project>

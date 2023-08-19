@@ -1,4 +1,5 @@
 ﻿global using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace Fabi.Core.DTOs;
 public class BaseMovieDto 

@@ -2,7 +2,7 @@
 "SpaProxyServer": {
 "ServerUrl": "",
 "LaunchCommand": "",
-"WorkingDirectory": "/Users/akifdemir/Desktop/desktop/fabi/Fabi.WebAPI",
+"WorkingDirectory": "D:\\projects\\fabi\\Fabi.WebAPI",
 "MaxTimeoutInSeconds": "120"
 }
 }
