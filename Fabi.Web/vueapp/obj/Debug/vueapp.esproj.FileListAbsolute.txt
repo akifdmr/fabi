@@ -1,2 +1,2 @@
-D:\projects\fabi\Fabi.Web\vueapp\obj\Debug\vueapp.esproj.SuggestedBindingRedirects.cache
-D:\projects\fabi\Fabi.Web\vueapp\obj\Debug\vueapp.esproj.CoreCompileInputs.cache
+D:/projects/fabi/Fabi.Web/vueapp/obj/Debug/vueapp.esproj.SuggestedBindingRedirects.cache
+D:/projects/fabi/Fabi.Web/vueapp/obj/Debug/vueapp.esproj.CoreCompileInputs.cache

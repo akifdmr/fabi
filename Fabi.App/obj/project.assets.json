@@ -4681,35 +4681,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akifd\\.nuget\\packages\\": {}
+    "/Users/akifdemir/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\fabi\\Fabi.App\\Fabi.App.csproj",
+      "projectUniqueName": "/Users/akifdemir/Desktop/fabi/Fabi.App/Fabi.App.csproj",
       "projectName": "Fabi.App",
-      "projectPath": "D:\\projects\\fabi\\Fabi.App\\Fabi.App.csproj",
-      "packagesPath": "C:\\Users\\akifd\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\fabi\\Fabi.App\\obj\\",
+      "projectPath": "/Users/akifdemir/Desktop/fabi/Fabi.App/Fabi.App.csproj",
+      "packagesPath": "/Users/akifdemir/.nuget/packages/",
+      "outputPath": "/Users/akifdemir/Desktop/fabi/Fabi.App/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\akifd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj": {
-              "projectPath": "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj"
+            "/Users/akifdemir/Desktop/fabi/Fabi.Services/Fabi.Services.csproj": {
+              "projectPath": "/Users/akifdemir/Desktop/fabi/Fabi.Services/Fabi.Services.csproj"
             }
           }
         }
@@ -4782,7 +4780,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -3501,37 +3501,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\akifd\\.nuget\\packages\\": {}
+    "/Users/akifdemir/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj",
+      "projectUniqueName": "/Users/akifdemir/Desktop/fabi/Fabi.Services/Fabi.Services.csproj",
       "projectName": "Fabi.Services",
-      "projectPath": "D:\\projects\\fabi\\Fabi.Services\\Fabi.Services.csproj",
-      "packagesPath": "C:\\Users\\akifd\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\fabi\\Fabi.Services\\obj\\",
+      "projectPath": "/Users/akifdemir/Desktop/fabi/Fabi.Services/Fabi.Services.csproj",
+      "packagesPath": "/Users/akifdemir/.nuget/packages/",
+      "outputPath": "/Users/akifdemir/Desktop/fabi/Fabi.Services/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\akifd\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/akifdemir/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj": {
-              "projectPath": "D:\\projects\\fabi\\Fabi.Core\\Fabi.Core.csproj"
+            "/Users/akifdemir/Desktop/fabi/Fabi.Core/Fabi.Core.csproj": {
+              "projectPath": "/Users/akifdemir/Desktop/fabi/Fabi.Core/Fabi.Core.csproj"
             },
-            "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj": {
-              "projectPath": "D:\\projects\\fabi\\Fabi.EF\\Fabi.EF.csproj"
+            "/Users/akifdemir/Desktop/fabi/Fabi.EF/Fabi.EF.csproj": {
+              "projectPath": "/Users/akifdemir/Desktop/fabi/Fabi.EF/Fabi.EF.csproj"
             }
           }
         }
@@ -3567,7 +3565,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
       }
     }
   }

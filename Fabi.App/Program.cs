@@ -76,13 +76,12 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "MoviesApi",
-        Description = "Build API with ASP.Net Core (.Net 6) that secured with JWT.",
+        Title = "Fabi App",
+        Description = "Build API with ASP.Net Core (.Net 7) that secured with JWT.",
         Contact = new OpenApiContact
         {
-            Name = "Nada Mahmoud",
-            Email = "nada.mhmudd@gmail.com",
-            Url = new Uri("https://www.linkedin.com/in/nada-mhmudd/")
+            Name = "Mehmet Akif Demir",
+            Email = "akifdmr@gmail.com"
         }
     });
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
