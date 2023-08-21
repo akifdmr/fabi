@@ -21,7 +21,11 @@ public partial class Address
 
     public virtual AddressType AddressType { get; set; } = null!;
 
-    public virtual City1 City { get; set; } = null!;
+    public virtual ICollection<AppUser> AppUsers { get; set; } = new List<AppUser>();
+
+    public virtual ICollection<ApplicationUser> ApplicationUsers { get; set; } = new List<ApplicationUser>();
+
+    public virtual City City { get; set; } = null!;
 
     public virtual ICollection<Company> Companies { get; set; } = new List<Company>();
 
@@ -29,5 +33,5 @@ public partial class Address
 
     public virtual Town Town { get; set; } = null!;
 
-    public virtual ICollection<Users> Users { get; set; } = new List<Users>();
+    public virtual ICollection<User> Users { get; set; } = new List<User>();
 }

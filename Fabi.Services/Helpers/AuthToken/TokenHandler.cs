@@ -3,21 +3,22 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Fabi.Core.appsettings;
 using Fabi.Core.Constants;
-using Fabi.Core.Entities.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Security.Cryptography;
 using Fabi.Core.Interfaces;
+using Fabi.Core;
+using Fabi.Core.Entities.Models;
 
 namespace Fabi.Services.Helpers;
 public class TokenHandler : ITokenHandler
 {
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly JWT _jwt;
+    private readonly Core.appsettings.JWT _jwt;
 
     public TokenHandler(UserManager<ApplicationUser> userManager, 
-        IOptions<JWT> jwt)
+        IOptions<Core.appsettings.JWT> jwt)
     {
         _userManager = userManager;
         _jwt = jwt.Value;
@@ -60,8 +61,8 @@ public class TokenHandler : ITokenHandler
     {
         var refreshToken = new RefreshToken();
 
-        if (user.RefreshTokens.Any(t => t.IsActive))
-            refreshToken = user.RefreshTokens.FirstOrDefault(t => t.IsActive);
+        if (user.RefreshTokens.Any(t => t.IsActive.Value))
+            refreshToken = user.RefreshTokens.FirstOrDefault(t => t.IsActive.Value);
         else
         {
             refreshToken = _generateRefreshToken();

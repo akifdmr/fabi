@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/appsettings.Development.json
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/appsettings.json
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Fabi.App.exe
@@ -95,6 +96,11 @@ D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Swashbuckle.Core.dll
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/System.CodeDom.dll
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/WebActivatorEx.dll
 D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Vite.AspNetCore.dll
+D:/projects/fabi/Fabi.App/bin/Debug/net7.0/Vite.AspNetCore.Abstractions.dll
+=======
 D:/projects/fabi/Fabi.App/obj/Debug/net7.0/Fabi.App.MvcApplicationPartsAssemblyInfo.cs
 /Users/akifdemir/Desktop/fabi/Fabi.App/bin/Debug/net7.0/appsettings.Development.json
 /Users/akifdemir/Desktop/fabi/Fabi.App/bin/Debug/net7.0/appsettings.json
@@ -194,3 +200,4 @@ D:/projects/fabi/Fabi.App/obj/Debug/net7.0/Fabi.App.MvcApplicationPartsAssemblyI
 /Users/akifdemir/Desktop/fabi/Fabi.App/obj/Debug/net7.0/Fabi.App.pdb
 /Users/akifdemir/Desktop/fabi/Fabi.App/obj/Debug/net7.0/Fabi.App.genruntimeconfig.cache
 /Users/akifdemir/Desktop/fabi/Fabi.App/obj/Debug/net7.0/ref/Fabi.App.dll
+>>>>>>> 852610e9b0131c47b87b7843d4049a63ebb03812

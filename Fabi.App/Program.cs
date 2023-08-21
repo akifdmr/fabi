@@ -1,5 +1,7 @@
 using AutoMapper;
+using Fabi.Core;
 using Fabi.Core.appsettings;
+using Fabi.Core.Entities.Models;
 using Fabi.EF.Data;
 using Fabi.Services.Helpers.FilesHnadler;
 using Fabi.Services.Helpers.Mapping;
@@ -144,45 +146,26 @@ try
             },
             new List<string>()
         }
-        });
     });
-      }
+});
+
+
+
+
 
     var app = builder.Build();
 
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI(options =>
-        {
-            options.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoList SPA API V1");
-        });
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-#if DEBUG
-        bool seed = app.Configuration.GetValue<bool>("seed");
-        if (seed)
-        {
-            using IServiceScope scope = app.Services.CreateScope();
-            ApplicationDbContext? context = scope.ServiceProvider.GetService<ApplicationDbContext>();
-            // DbInitializer.SeedDb(context!);
-        }
-#endif
-    }
-    
-    if (!app.Environment.IsDevelopment())
-    {
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        app.UseHsts();
-    }
-    app.UseHttpsRedirection();
-    app.UseSerilogRequestLogging();
-    app.UseStaticFiles();
-    app.UseRouting();
-    app.UseAuthentication();
-    app.UseAuthorization();
-    //seed database 
-    //SeedDatabase();
-    app.UseMiddleware<ErrorHandlerMiddleware>();
+app.UseHttpsRedirection();
+
+//seed database 
+//SeedDatabase();
 
     //add core before authorization
  app.UseCors(opts =>

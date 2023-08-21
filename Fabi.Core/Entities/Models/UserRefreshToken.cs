@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Fabi.Core.Entities.Models;
 
-public class UserRefreshToken
+public partial class UserRefreshToken
 {
     public Guid Id { get; set; }
 

@@ -4,27 +4,39 @@ using System.Collections.Generic;
 
 namespace Fabi.Core.Entities.Models;
 
-public  class ApplicationUser : IdentityUser
+public partial class ApplicationUser : IdentityUser
 {
+    public Guid Id { get; set; }
 
-    public Guid UserId { get; set; }
+    public string? UserName { get; set; }
 
-    public string UserName { get; set; } = null!;
+    public string? Email { get; set; }
 
-    public string Password { get; set; } = null!;
+    public string? PasswordHash { get; set; }
 
-    public Guid AccountRoleId { get; set; }
+    public string? ConcurrencyStamp { get; set; }
 
-    public bool? IdActive { get; set; }
+    public string? PhoneNumber { get; set; }
 
-    public virtual AccountPermissionPageCategory? AccountPermissionPageCategory { get; set; }
+    public DateTimeOffset? LockoutEnd { get; set; }
 
-    public virtual AccountRole AccountRole { get; set; } = null!;
+    public bool LockoutEnabled { get; set; }
 
-    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+    public int AccessFailedCount { get; set; }
 
-    public virtual Users User { get; set; } = null!;
+    public Guid? CompanyId { get; set; }
 
-    public List<RefreshToken>? RefreshTokens { get; set; }
+    public string? Name { get; set; }
 
+    public string? Surname { get; set; }
+
+    public Guid? AddressId { get; set; }
+
+    public virtual ICollection<AccountRoleRelation> AccountRoleRelations { get; set; } = new List<AccountRoleRelation>();
+
+    public virtual Address? Address { get; set; }
+
+    public virtual Company? Company { get; set; }
+
+    public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
 }

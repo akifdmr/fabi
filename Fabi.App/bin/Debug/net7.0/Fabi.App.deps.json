@@ -14,10 +14,12 @@
           "Microsoft.AspNetCore.SpaServices.Extensions": "7.0.9",
           "Microsoft.EntityFrameworkCore.Design": "7.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "2.0.0-preview1-final",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Swashbuckle": "5.6.0",
           "Swashbuckle.AspNetCore": "6.5.0",
-          "System.IdentityModel.Tokens.Jwt": "7.1.0-preview"
+          "System.IdentityModel.Tokens.Jwt": "7.1.0-preview",
+          "Vite.AspNetCore": "1.9.3"
         },
         "runtime": {
           "Fabi.App.dll": {}
@@ -305,6 +307,18 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.9",
+          "NETStandard.Library": "2.0.0-preview1-25301-01"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.SqlServer/7.0.9": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.0.2",
@@ -314,6 +328,19 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
             "assemblyVersion": "7.0.9.0",
             "fileVersion": "7.0.923.31909"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Design/2.0.0-preview1-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "2.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
+          "NETStandard.Library": "2.0.0-preview1-25301-01"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.17128"
           }
         }
       },
@@ -517,6 +544,7 @@
           }
         }
       },
+      "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {},
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -567,6 +595,12 @@
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.1"
           }
+        }
+      },
+      "NETStandard.Library/2.0.0-preview1-25301-01": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview1-25301-01"
         }
       },
       "Newtonsoft.Json/7.0.1": {
@@ -860,6 +894,25 @@
           }
         }
       },
+      "Vite.AspNetCore/1.9.3": {
+        "dependencies": {
+          "Vite.AspNetCore.Abstractions": "1.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.dll": {
+            "assemblyVersion": "1.9.3.0",
+            "fileVersion": "1.9.3.0"
+          }
+        }
+      },
+      "Vite.AspNetCore.Abstractions/1.0.1": {
+        "runtime": {
+          "lib/net6.0/Vite.AspNetCore.Abstractions.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "WebActivatorEx/2.0.0": {
         "dependencies": {
           "Microsoft.Web.Infrastructure": "1.0.0"
@@ -1072,12 +1125,26 @@
       "path": "microsoft.entityframeworkcore.relational/7.0.9",
       "hashPath": "microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/2.0.0-preview1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3BtBHSgNJaUrj+r5ARBTeRxjMq/og8NdzzdfuyYjwLT6QCX79mCAQ44/MMl5NfwRmPRIerCTUifunQmEZtMQ/w==",
+      "path": "microsoft.entityframeworkcore.relational.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.2.0.0-preview1-final.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.SqlServer/7.0.9": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-19S5BWZBcaShhLWzePi9iOq+meKIgL+dDlS0NQgPOQapu3wb3So3ZL0xgPmmlyq3GLYvXiCmQsK3Yv3vXYaMTg==",
       "path": "microsoft.entityframeworkcore.sqlserver/7.0.9",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.9.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.Design/2.0.0-preview1-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c8olmWfi+pQyovpd0o5vlYY3eXeKBruv8oL0s7VY8f0QUvlEplyT2QP+coDAU7JBgNOv50TiuwKVMDH87zskDA==",
+      "path": "microsoft.entityframeworkcore.sqlserver.design/2.0.0-preview1-final",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.design.2.0.0-preview1-final.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",
@@ -1275,6 +1342,13 @@
       "path": "microsoft.openapi/1.4.3",
       "hashPath": "microsoft.openapi.1.4.3.nupkg.sha512"
     },
+    "Microsoft.Packaging.Tools/1.0.0-preview1-25301-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i0gGYp5lCB3NVx3FglfIXsRZ0kld4e+Wr++svzMOB1g21mos0yOFmohLujdb/HqkjaJfENdH5/CCV5rfhb2RWw==",
+      "path": "microsoft.packaging.tools/1.0.0-preview1-25301-01",
+      "hashPath": "microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512"
+    },
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1309,6 +1383,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0-preview1-25301-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JgI5IsPMAkYqYeahc+T1G20qqE2qu/P0ZyW2GUPUxxfiT2nQGNDDPq9KHCPUODA3AMSHOp1Vnp6Sxa6jgVYfkg==",
+      "path": "netstandard.library/2.0.0-preview1-25301-01",
+      "hashPath": "netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512"
     },
     "Newtonsoft.Json/7.0.1": {
       "type": "package",
@@ -1568,6 +1649,20 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "Vite.AspNetCore/1.9.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c03uenurcrEZ+6hJCoXrgmsVNNiG6uWI3yw/jMPSQMw/8k70XVAU5i45l+kjlukIyXLKSS2gq4gRNvG0MQ92Ag==",
+      "path": "vite.aspnetcore/1.9.3",
+      "hashPath": "vite.aspnetcore.1.9.3.nupkg.sha512"
+    },
+    "Vite.AspNetCore.Abstractions/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ob0O48nIxsj6Pu3ESShRYU7Sgapaub9Lgd3yOV9IsKscwzhCRqWbm3WBSksZuYjFUvdUdZpuIn2QoozhO/Nhqg==",
+      "path": "vite.aspnetcore.abstractions/1.0.1",
+      "hashPath": "vite.aspnetcore.abstractions.1.0.1.nupkg.sha512"
     },
     "WebActivatorEx/2.0.0": {
       "type": "package",

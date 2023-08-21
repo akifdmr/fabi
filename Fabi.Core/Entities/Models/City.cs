@@ -5,13 +5,15 @@ namespace Fabi.Core.Entities.Models;
 
 public partial class City
 {
-    public int CityId { get; set; }
+    public Guid Id { get; set; }
 
-    public int CountryId { get; set; }
+    public string Name { get; set; } = null!;
 
-    public string CityName { get; set; } = null!;
+    public int? Code { get; set; }
 
-    public string PlateNo { get; set; } = null!;
+    public virtual ICollection<Address> Addresses { get; set; } = new List<Address>();
 
-    public string PhoneCode { get; set; } = null!;
+    public virtual ICollection<DeliveryGroup> DeliveryGroups { get; set; } = new List<DeliveryGroup>();
+
+    public virtual ICollection<OrderDeliveryGroup> OrderDeliveryGroups { get; set; } = new List<OrderDeliveryGroup>();
 }

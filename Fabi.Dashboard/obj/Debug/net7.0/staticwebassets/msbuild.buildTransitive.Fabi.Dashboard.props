@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Fabi.Dashboard.props" />
+</Project>

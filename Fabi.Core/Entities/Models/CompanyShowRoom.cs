@@ -19,7 +19,7 @@ public partial class CompanyShowRoom
 
     public virtual Company Company { get; set; } = null!;
 
-    public virtual Users ContactUser { get; set; } = null!;
+    public virtual User ContactUser { get; set; } = null!;
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }
