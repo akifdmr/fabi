@@ -13,7 +13,5 @@ public partial class UserRole
 
     public bool IsEmployeeRole { get; set; }
 
-    public virtual ICollection<EmployeeRole> EmployeeRoles { get; set; } = new List<EmployeeRole>();
-
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 }

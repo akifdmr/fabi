@@ -1,5 +1,7 @@
 using AutoMapper;
+using Fabi.Core;
 using Fabi.Core.appsettings;
+using Fabi.Core.Entities.Models;
 using Fabi.EF.Data;
 using Fabi.Services.Helpers.FilesHnadler;
 using Fabi.Services.Helpers.Mapping;
@@ -24,7 +26,6 @@ services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<A
 
 services.Configure<JWT>(builder.Configuration.GetSection("JWT"));
 services.AddScoped<global::Fabi.Core.Interfaces.ITokenHandler, global::Fabi.Services.Helpers.TokenHandler>();
-
 
 //register unitOfWork for our program 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -115,7 +116,10 @@ builder.Services.AddSwaggerGen(options =>
 
 
 
-
+services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "ClientApp/dist";
+});
 
 var app = builder.Build();
 
@@ -127,7 +131,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseRouting();
+app.UseSpa(spa =>
+{
+    if (app.Environment.IsDevelopment())
+        spa.UseViteDevelopmentServer(sourcePath: "ClientApp");
+});
 //seed database 
 //SeedDatabase();
 

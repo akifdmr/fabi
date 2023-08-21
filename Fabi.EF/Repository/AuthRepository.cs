@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Fabi.Core;
 using Fabi.Core.Constants;
 using Fabi.Core.Constants.Enums;
 using Fabi.Core.DTOs;
@@ -6,7 +7,7 @@ using Fabi.Core.Entities.Models;
 using Fabi.Core.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using System.IdentityModel.Tokens.Jwt;
-
+using Role= Fabi.Core.Constants.Enums.Role;
 namespace Fabi.EF.Repositories;
 public class AuthRepository : IAuthRepository
 {
@@ -106,14 +107,14 @@ public class AuthRepository : IAuthRepository
 
         var refreshToken = user.RefreshTokens.Single(t => t.Token == token);
 
-        if (!refreshToken.IsActive)
+        if (!refreshToken.IsActive.Value)
         {
             authDto.Message = "Inactive Token!";
             return authDto;
         }
 
         //step 1 : revoke refreshToken
-        refreshToken.RevokedOn = DateTime.UtcNow;
+        refreshToken.RevokedDate = DateTime.UtcNow;
 
         //step 2 : create new refreshToken
         var newRefreshToken = await _tokenHandler.CreateRefreshToken(user);
@@ -134,10 +135,10 @@ public class AuthRepository : IAuthRepository
 
         var refreshToken = user.RefreshTokens.Single(t => t.Token == token);
 
-        if (!refreshToken.IsActive)
+        if (!refreshToken.IsActive.Value)
             return false;
 
-        refreshToken.RevokedOn = DateTime.UtcNow;
+        refreshToken.RevokedDate = DateTime.UtcNow;
 
         await _userManager.UpdateAsync(user);
 
@@ -158,7 +159,7 @@ public class AuthRepository : IAuthRepository
             Token = new JwtSecurityTokenHandler().WriteToken(JwtToken),
             ExpiresOn = JwtToken.ValidTo,
             RefreshToken = refreshToken.Token,
-            RefreshTokenExpiration = refreshToken.ExpiresOn,
+            RefreshTokenExpiration = refreshToken.ExpiredDate.Value,
         };
     }
     #endregion

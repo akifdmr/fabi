@@ -1,6 +1,9 @@
-﻿namespace Fabi.Core.Entities.Models;
+﻿using System;
+using System.Collections.Generic;
 
-public  class Users
+namespace Fabi.Core.Entities.Models;
+
+public partial class User
 {
     public Guid Id { get; set; }
 
@@ -14,24 +17,15 @@ public  class Users
 
     public string Email { get; set; } = null!;
 
-    public Guid CompanyId { get; set; }
-
-    public Guid UserRoleId { get; set; }
-
     public bool? IsActive { get; set; }
 
-    public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
-
-    public virtual ICollection<ApplicationUser> Accounts { get; set; } = new List<ApplicationUser>();
+    public Guid CompanyId { get; set; }
 
     public virtual Address Address { get; set; } = null!;
-
 
     public virtual ICollection<CompanyShowRoom> CompanyShowRooms { get; set; } = new List<CompanyShowRoom>();
 
     public virtual ICollection<CompanyUser> CompanyUsers { get; set; } = new List<CompanyUser>();
-
-    public virtual ICollection<EmployeeRole> EmployeeRoles { get; set; } = new List<EmployeeRole>();
 
     public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
 

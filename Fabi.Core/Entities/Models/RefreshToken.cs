@@ -1,21 +1,25 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Fabi.Core.Entities.Models;
 
-[Owned]
 public partial class RefreshToken
 {
-    public Guid Id { get; set; }
-    public Guid ApplicationUserId { get; set; }
-    #region Props
-    public string Token { get; set; }
-    public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
-    public DateTime ExpiresOn { get; set; } = DateTime.UtcNow.AddDays(10);
-    public DateTime? RevokedOn { get; set; }
-    #endregion
+    public string? Token { get; set; }
 
-    #region Methods
-    public bool IsExpired => DateTime.UtcNow >= ExpiresOn;
-    public bool IsActive => RevokedOn == null && !IsExpired;
-    #endregion
+    public Guid? ApplicationUserId { get; set; }
+
+    public DateTime? CreatedDate { get; set; }
+
+    public DateTime? ExpiredDate { get; set; }
+
+    public DateTime? RevokedDate { get; set; }
+
+    public bool? IsExpired { get; set; }
+
+    public bool? IsActive { get; set; }
+
+    public Guid Id { get; set; }
+
+    public virtual ApplicationUser? ApplicationUser { get; set; }
 }

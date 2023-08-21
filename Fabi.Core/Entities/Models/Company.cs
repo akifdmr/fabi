@@ -27,6 +27,10 @@ public partial class Company
 
     public virtual Address Address { get; set; } = null!;
 
+    public virtual ICollection<AppUser> AppUsers { get; set; } = new List<AppUser>();
+
+    public virtual ICollection<ApplicationUser> ApplicationUsers { get; set; } = new List<ApplicationUser>();
+
     public virtual ICollection<CompanyShowRoom> CompanyShowRooms { get; set; } = new List<CompanyShowRoom>();
 
     public virtual ICollection<DeliveryGroupCompany> DeliveryGroupCompanies { get; set; } = new List<DeliveryGroupCompany>();

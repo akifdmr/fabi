@@ -11,7 +11,7 @@ public partial class OrderDeliveryGroup
 
     public string Name { get; set; } = null!;
 
-    public virtual City1 City { get; set; } = null!;
+    public virtual City City { get; set; } = null!;
 
     public virtual ICollection<OrderDelivery> OrderDeliveries { get; set; } = new List<OrderDelivery>();
 }

@@ -1,8 +1,11 @@
 ﻿namespace Fabi.App.Middlewares;
 
-using Microsoft.AspNetCore.Builder;
+using Fabi.App.Helper;
 using Microsoft.AspNetCore.Http;
-using System.Text;
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 public class RequestResponseLoggingMiddleware

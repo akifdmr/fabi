@@ -11,21 +11,10 @@ namespace Net6_Controller_And_VIte
 
         private static ILogger ViteLogger;
 
-
-        /// <summary>
-        /// Adds Connection to Vite Hosted VueApplication
-        /// configured per <seealso cref="SpaOptions"/> on the <paramref name="spa"/>.
-        /// NOTE: (this will create devcert.pfx and vite.config.js in your Vue Application on first run)
-        /// </summary>
-        /// <param name="port">Vite hosting port</param>
-        /// <param name="sourcePath">Vite app source path</param>
         public static void UseViteDevelopmentServer(this ISpaBuilder spa, int? port = null, string sourcePath = null)
         {
 
-            // throw error if node.js not installed.
             EnsureNodeJSAlreadyInstalled();
-
-            // Default HostingPort
             if (!port.HasValue)
                 port = 3000;
 
@@ -41,11 +30,9 @@ namespace Net6_Controller_And_VIte
             var webHostEnvironment = spa.ApplicationBuilder.ApplicationServices.GetService<IWebHostEnvironment>();
             ViteLogger = spa.ApplicationBuilder.ApplicationServices.GetService<ILoggerFactory>()?.CreateLogger("Vite");
 
-            // If port not in used , launch vite dev server
             if (!CheckPortInUsed(spa.Options.DevServerPort))
             {
 
-                // export dev cert
                 var spaFolder = Path.Combine(webHostEnvironment.ContentRootPath, spa.Options.SourcePath);
                 if (!Directory.Exists(spaFolder))
                     throw new DirectoryNotFoundException(spaFolder);
@@ -56,12 +43,10 @@ namespace Net6_Controller_And_VIte
                 var serverOptionFile = Path.Combine(spaFolder, $"serverOption{new FileInfo(viteConfigPath).Extension}");
 
 
-                // Check dev pfx exist
                 if (!File.Exists(serverOptionFile) || !File.Exists(devCert))
                 {
                     var pwd = CreateCertPfxKey(devCert);
 
-                    // Create serverOption file
                     File.WriteAllText(serverOptionFile, BuildServerOption(devCert, pwd));
                     ViteLogger?.LogInformation($"Creating Vite config: {serverOptionFile}");
 
@@ -71,23 +56,18 @@ namespace Net6_Controller_And_VIte
 
                 EnsureNodeModuleAlreadyInstalled(spa.Options.SourcePath);
 
-                // launch Vite development server
                 RunDevServer(spa.Options.SourcePath, spa.Options.DevServerPort, spa.Options.StartupTimeout);
             }
 
             spa.UseProxyToSpaDevelopmentServer(devServerEndpoint);
         }
 
-        /// <summary>
-        /// Injection vite.config file to use serverOption file
-        /// </summary>
         private static void InjectionViteConfig(string viteConfigPath, string serverOptionFile)
         {
             var optionFile = new FileInfo(serverOptionFile);
             var serverOption = optionFile.Name[..^optionFile.Extension.Length];
             var data = File.ReadAllLines(viteConfigPath).ToList();
 
-            // Already injection
             if (data.Any(x => x.Contains($"./{serverOption}")))
                 return;
 
@@ -102,9 +82,7 @@ namespace Net6_Controller_And_VIte
             File.WriteAllLines(viteConfigPath, data);
         }
 
-        /// <summary>
-        /// Get vite.config file Path (support .ts and .js)
-        /// </summary>
+
         private static string GetViteConfigFile(string rootPath)
         {
             var configFile = Directory.GetFiles(rootPath)
@@ -120,9 +98,6 @@ namespace Net6_Controller_And_VIte
             return configFile;
         }
 
-        /// <summary>
-        /// Build Vite https server option
-        /// </summary>
         private static string BuildServerOption(string certfile, string pass)
         {
             var sb = new StringBuilder();
@@ -142,17 +117,12 @@ namespace Net6_Controller_And_VIte
                 .Select(x => x.Port)
                 .Contains(port);
 
-        /// <summary>
-        /// if 'node_module' not exist than run 'npm install'
-        /// </summary>
         private static void EnsureNodeModuleAlreadyInstalled(string sourcePath)
         {
-            // Check Node_Module exists
             if (!Directory.Exists(Path.Combine(sourcePath, "node_modules")))
             {
                 ViteLogger?.LogWarning($"node_modules not found , run npm install...");
 
-                // Install node modules
                 var ps = Process.Start(new ProcessStartInfo()
                 {
                     FileName = PlatformIsWindows ? "cmd" : "npm",
@@ -169,10 +139,6 @@ namespace Net6_Controller_And_VIte
             }
         }
 
-        /// <summary>
-        /// Throw exception if 'node --version' catch error
-        /// </summary>
-        /// <exception cref="Exception"></exception>
         private static void EnsureNodeJSAlreadyInstalled()
         {
             var ps = Process.Start(new ProcessStartInfo()
@@ -195,9 +161,6 @@ namespace Net6_Controller_And_VIte
 
         }
 
-        /// <summary>
-        /// Create pfx key and return password
-        /// </summary>
         private static string CreateCertPfxKey(string fileName)
         {
             var pfxPassword = Guid.NewGuid().ToString("N");

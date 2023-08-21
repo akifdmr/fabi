@@ -39,8 +39,6 @@ public partial class Order
 
     public virtual CompanyUser CompanyUser { get; set; } = null!;
 
-    public virtual ApplicationUser? ConfirmedByNavigation { get; set; }
-
     public virtual Employee Employee { get; set; } = null!;
 
     public virtual ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();

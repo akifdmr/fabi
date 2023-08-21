@@ -26,4 +26,8 @@
   <ItemGroup>
     <None Remove="DTOs\User\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Models\" />
+  </ItemGroup>
 </Project>

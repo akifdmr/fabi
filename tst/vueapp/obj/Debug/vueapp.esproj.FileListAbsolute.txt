@@ -1,2 +1,0 @@
-D:\projects\fabi\tst\vueapp\obj\Debug\vueapp.esproj.SuggestedBindingRedirects.cache
-D:\projects\fabi\tst\vueapp\obj\Debug\vueapp.esproj.CoreCompileInputs.cache

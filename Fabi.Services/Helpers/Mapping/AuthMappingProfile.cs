@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Fabi.Core;
 using Fabi.Core.DTOs;
 using Fabi.Core.Entities.Models;
 

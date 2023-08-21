@@ -1,5 +1,4 @@
-﻿using Fabi.Core.Entities.Models;
-
+﻿
 namespace Fabi.Core.Interfaces;
 public interface IUnitOfWork
 {

@@ -95,4 +95,7 @@ D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Swashbuckle.Core.dll
 D:\projects\fabi\Fabi.App\bin\Debug\net7.0\System.CodeDom.dll
 D:\projects\fabi\Fabi.App\bin\Debug\net7.0\WebActivatorEx.dll
 D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\projects\fabi\Fabi.App\obj\Debug\net7.0\Fabi.App.MvcApplicationPartsAssemblyInfo.cs
+D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Vite.AspNetCore.dll
+D:\projects\fabi\Fabi.App\bin\Debug\net7.0\Vite.AspNetCore.Abstractions.dll
