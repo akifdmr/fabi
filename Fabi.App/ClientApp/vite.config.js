@@ -3,23 +3,34 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  define: {
-    'process.env': process.env
-  },
-  plugins: [vue()],
-  resolve: {
-    alias: [
-      {
-        find: /^~.+/,
-        replacement: (val) => {
-          return val.replace(/^~/, "");
-        },
-      },
-    ],
-  },
-  build: {
-    commonjsOptions: {
-      transformMixedEsModules: true,
+    define: {
+        'process.env': process.env
+    },
+    plugins: [vue()],
+    server: {
+        port: 3000,
+        https: true,
+        strictPort: true,
+        proxy: {
+            '/api': {
+                target: 'https://localhost:5001',
+                changeOrigin: true,
+                secure: true,
+                rewrite: (path) => path.replace(/^\/api/, '/api'),
+            }
+        }
+    },
+    resolve: {
+        alias: [{
+            find: /^~.+/,
+            replacement: (val) => {
+                return val.replace(/^~/, "");
+            },
+        }, ],
+    },
+    build: {
+        commonjsOptions: {
+            transformMixedEsModules: true,
+        }
     }
-  }
 })
