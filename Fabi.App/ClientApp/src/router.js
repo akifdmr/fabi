@@ -68,273 +68,272 @@ import IconsPage from './pages/component/IconsPage.vue'
 const routerHistory = createWebHistory()
 
 const router = createRouter({
-  history: routerHistory,
-  routes: [
-    {
-      path: '/',
-      component: Dashboard
-    },
-    {
-      path: '/dashboard/analytics',
-      component: Analytics
-    },
-    {
-      path: '/dashboard/fintech',
-      component: Fintech
-    },    
-    {
-      path: '/ecommerce/customers',
-      component: Customers
-    },
-    {
-      path: '/ecommerce/orders',
-      component: Orders
-    },
-    {
-      path: '/ecommerce/invoices',
-      component: Invoices
-    },
-    {
-      path: '/ecommerce/shop',
-      component: Shop
-    },
-    {
-      path: '/ecommerce/shop-2',
-      component: Shop2
-    },
-    {
-      path: '/ecommerce/product',
-      component: Product
-    },
-    {
-      path: '/ecommerce/cart',
-      component: Cart
-    },
-    {
-      path: '/ecommerce/cart-2',
-      component: Cart2
-    },
-    {
-      path: '/ecommerce/cart-3',
-      component: Cart3
-    },
-    {
-      path: '/ecommerce/pay',
-      component: Pay
-    },
-    {
-      path: '/campaigns',
-      component: Campaigns
-    },
-    {
-      path: '/community/users-tabs',
-      component: UsersTabs
-    },
-    {
-      path: '/community/users-tiles',
-      component: UsersTiles
-    },
-    {
-      path: '/community/profile',
-      component: Profile
-    },
-    {
-      path: '/community/feed',
-      component: Feed
-    },
-    {
-      path: '/community/forum',
-      component: Forum
-    },
-    {
-      path: '/community/forum-post',
-      component: ForumPost
-    },    
-    {
-      path: '/community/meetups',
-      component: Meetups
-    },
-    {
-      path: '/community/meetups-post',
-      component: MeetupsPost
-    },
-    {
-      path: '/finance/cards',
-      component: CreditCards
-    }, 
-    {
-      path: '/finance/transactions',
-      component: Transactions
-    },
-    {
-      path: '/finance/transaction-details',
-      component: TransactionDetails
-    },
-    {
-      path: '/job/job-listing',
-      component: JobListing
-    },
-    {
-      path: '/job/job-post',
-      component: JobPost
-    },
-    {
-      path: '/job/company-profile',
-      component: CompanyProfile
-    },            
-    {
-      path: '/messages',
-      component: Messages
-    },
-    {
-      path: '/tasks/kanban',
-      component: TasksKanban
-    },
-    {
-      path: '/tasks/list',
-      component: TasksList
-    },    
-    {
-      path: '/inbox',
-      component: Inbox
-    },
-    {
-      path: '/calendar',
-      component: Calendar
-    },
-    {
-      path: '/settings/account',
-      component: Account
-    },
-    {
-      path: '/settings/notifications',
-      component: Notifications
-    },
-    {
-      path: '/settings/apps',
-      component: Apps
-    },
-    {
-      path: '/settings/plans',
-      component: Plans
-    },
-    {
-      path: '/settings/billing',
-      component: Billing
-    },
-    {
-      path: '/settings/feedback',
-      component: Feedback
-    },
-    {
-      path: '/utility/changelog',
-      component: Changelog
-    },
-    {
-      path: '/utility/roadmap',
-      component: Roadmap
-    },
-    {
-      path: '/utility/faqs',
-      component: Faqs
-    },
-    {
-      path: '/utility/empty-state',
-      component: EmptyState
-    },
-    {
-      path: '/utility/404',
-      component: PageNotFound
-    },
-    {
-      path: '/utility/knowledge-base',
-      component: KnowledgeBase
-    },
-    {
-      path: '/signin',
-      component: Signin
-    },
-    {
-      path: '/signup',
-      component: Signup
-    },
-    {
-      path: '/reset-password',
-      component: ResetPassword
-    },
-    {
-      path: '/onboarding-01',
-      component: Onboarding01
-    },
-    {
-      path: '/onboarding-02',
-      component: Onboarding02
-    },
-    {
-      path: '/onboarding-03',
-      component: Onboarding03
-    },
-    {
-      path: '/onboarding-04',
-      component: Onboarding04
-    },
-    {
-      path: '/component/button',
-      component: ButtonPage
-    },
-    {
-      path: '/component/form',
-      component: FormPage
-    },
-    {
-      path: '/component/dropdown',
-      component: DropdownPage
-    },
-    {
-      path: '/component/alert',
-      component: AlertPage
-    },
-    {
-      path: '/component/modal',
-      component: ModalPage
-    },
-    {
-      path: '/component/pagination',
-      component: PaginationPage
-    },
-    {
-      path: '/component/tabs',
-      component: TabsPage
-    },
-    {
-      path: '/component/breadcrumb',
-      component: BreadcrumbPage
-    },
-    {
-      path: '/component/badge',
-      component: BadgePage
-    },
-    {
-      path: '/component/avatar',
-      component: AvatarPage
-    },
-    {
-      path: '/component/tooltip',
-      component: TooltipPage
-    },
-    {
-      path: '/component/accordion',
-      component: AccordionPage
-    },
-    {
-      path: '/component/icons',
-      component: IconsPage
-    },
-    {
-      path: '/:pathMatch(.*)*',
-      component: PageNotFound
-    }
-  ]
+    history: routerHistory,
+    routes: [{
+            path: '/',
+            component: Dashboard
+        },
+        {
+            path: '/dashboard/analytics',
+            component: Analytics
+        },
+        {
+            path: '/dashboard/fintech',
+            component: Fintech
+        },
+        {
+            path: '/ecommerce/customers',
+            component: Customers
+        },
+        {
+            path: '/ecommerce/orders',
+            component: Orders
+        },
+        {
+            path: '/ecommerce/invoices',
+            component: Invoices
+        },
+        {
+            path: '/ecommerce/shop',
+            component: Shop
+        },
+        {
+            path: '/ecommerce/shop-2',
+            component: Shop2
+        },
+        {
+            path: '/ecommerce/product',
+            component: Product
+        },
+        {
+            path: '/ecommerce/cart',
+            component: Cart
+        },
+        {
+            path: '/ecommerce/cart-2',
+            component: Cart2
+        },
+        {
+            path: '/ecommerce/cart-3',
+            component: Cart3
+        },
+        {
+            path: '/ecommerce/pay',
+            component: Pay
+        },
+        {
+            path: '/campaigns',
+            component: Campaigns
+        },
+        {
+            path: '/community/users-tabs',
+            component: UsersTabs
+        },
+        {
+            path: '/community/users-tiles',
+            component: UsersTiles
+        },
+        {
+            path: '/community/profile',
+            component: Profile
+        },
+        {
+            path: '/community/feed',
+            component: Feed
+        },
+        {
+            path: '/community/forum',
+            component: Forum
+        },
+        {
+            path: '/community/forum-post',
+            component: ForumPost
+        },
+        {
+            path: '/community/meetups',
+            component: Meetups
+        },
+        {
+            path: '/community/meetups-post',
+            component: MeetupsPost
+        },
+        {
+            path: '/finance/cards',
+            component: CreditCards
+        },
+        {
+            path: '/finance/transactions',
+            component: Transactions
+        },
+        {
+            path: '/finance/transaction-details',
+            component: TransactionDetails
+        },
+        {
+            path: '/job/job-listing',
+            component: JobListing
+        },
+        {
+            path: '/job/job-post',
+            component: JobPost
+        },
+        {
+            path: '/job/company-profile',
+            component: CompanyProfile
+        },
+        {
+            path: '/messages',
+            component: Messages
+        },
+        {
+            path: '/tasks/kanban',
+            component: TasksKanban
+        },
+        {
+            path: '/tasks/list',
+            component: TasksList
+        },
+        {
+            path: '/inbox',
+            component: Inbox
+        },
+        {
+            path: '/calendar',
+            component: Calendar
+        },
+        {
+            path: '/settings/account',
+            component: Account
+        },
+        {
+            path: '/settings/notifications',
+            component: Notifications
+        },
+        {
+            path: '/settings/apps',
+            component: Apps
+        },
+        {
+            path: '/settings/plans',
+            component: Plans
+        },
+        {
+            path: '/settings/billing',
+            component: Billing
+        },
+        {
+            path: '/settings/feedback',
+            component: Feedback
+        },
+        {
+            path: '/utility/changelog',
+            component: Changelog
+        },
+        {
+            path: '/utility/roadmap',
+            component: Roadmap
+        },
+        {
+            path: '/utility/faqs',
+            component: Faqs
+        },
+        {
+            path: '/utility/empty-state',
+            component: EmptyState
+        },
+        {
+            path: '/utility/404',
+            component: PageNotFound
+        },
+        {
+            path: '/utility/knowledge-base',
+            component: KnowledgeBase
+        },
+        {
+            path: '/signin',
+            component: Signin
+        },
+        {
+            path: '/signup',
+            component: Signup
+        },
+        {
+            path: '/reset-password',
+            component: ResetPassword
+        },
+        {
+            path: '/onboarding-01',
+            component: Onboarding01
+        },
+        {
+            path: '/onboarding-02',
+            component: Onboarding02
+        },
+        {
+            path: '/onboarding-03',
+            component: Onboarding03
+        },
+        {
+            path: '/onboarding-04',
+            component: Onboarding04
+        },
+        {
+            path: '/component/button',
+            component: ButtonPage
+        },
+        {
+            path: '/component/form',
+            component: FormPage
+        },
+        {
+            path: '/component/dropdown',
+            component: DropdownPage
+        },
+        {
+            path: '/component/alert',
+            component: AlertPage
+        },
+        {
+            path: '/component/modal',
+            component: ModalPage
+        },
+        {
+            path: '/component/pagination',
+            component: PaginationPage
+        },
+        {
+            path: '/component/tabs',
+            component: TabsPage
+        },
+        {
+            path: '/component/breadcrumb',
+            component: BreadcrumbPage
+        },
+        {
+            path: '/component/badge',
+            component: BadgePage
+        },
+        {
+            path: '/component/avatar',
+            component: AvatarPage
+        },
+        {
+            path: '/component/tooltip',
+            component: TooltipPage
+        },
+        {
+            path: '/component/accordion',
+            component: AccordionPage
+        },
+        {
+            path: '/component/icons',
+            component: IconsPage
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            component: PageNotFound
+        }
+    ]
 })
 
 export default router
